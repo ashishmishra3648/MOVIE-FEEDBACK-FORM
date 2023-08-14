@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-display: 5px;
+        font-size: 20px;
+        transition-property: opacity, transform;
+        font-family: Dancing script;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        font-variation-settings: "MORF" 0;
+        font-optical-sizing: auto;
+        text-align: start;
+        line-height: initial;
+        opacity: 1;
+        transition-duration: 350ms;
+      }
+
+      body {
+        background-image: url("https://th.bing.com/th/id/OIP.qgj89ekQ_RZ6tPfEvmNt0QHaEK?pid=ImgDet&rs=1");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-size: 100% 100%;
+      }
+      #hd2 {
+        font-family: "Times New Roman", Times, serif;
+        /* padding-left:150px ; */
+        background: rgba(169, 83, 156, 0.549);
+        border: 3px solid black;
+        border-radius: 20px;
+        width: 450px;
+        text-align: center;
+        margin: auto auto;
+        padding: auto auto;
+        display: block;
+        position: sticky;
+        top: 2px;
+      }
+      .common:hover {
+        cursor: pointer;
+      }
+      #submit {
+        color: rgb(237, 223, 223);
+        background: #20086e;
+        border-radius: 6px;
+      }
+      #submit:hover {
+        border: 2.5px solid black;
+        color: black;
+        background: #dcdae0;
+        border-radius: 6px;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      }
+      #reset:hover {
+        color: black;
+        background: rgb(223, 214, 214);
+        border: 2.5px solid black;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      }
+      #reset {
+        border-radius: 6px;
+        color: wheat;
+        background: red;
+      }
+      body {
+        text-align: center;
+      }
+      #contact {
+        border-radius: 6px;
+        color: #e1deed;
+        background: #045a1e;
+      }
+      #contact:hover {
+        color: black;
+        background: rgb(223, 214, 214);
+        border: 2.5px solid black;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="hd2">
+      <h2>Movie Feedback Form</h2>
+    </div>
+    <form action="backend.php">
+      <br />
+      <label for="name">Name :</label>
+      <input type="text" name="myName" id="name" class="common" />
+
+      <div></div>
+      <br />
+      <label for="movie name">Movie Name:</label>
+      <input type="text" name="myRole" id="movie name" class="common" />
+      <div></div>
+      <br />
+      <label for="email">Email :</label>
+      <input type="email" name="myEmail" id="email" class="common" />
+      <div></div>
+      <br />
+      <label for="dob">D.O.B :</label>
+      <input type="date" name="myDate" id="dob" class="common" />
+      <div></div>
+      <br />
+      <label for="nmbr">Phone Number :</label>
+      <input type="number" name="myNumber" id="nmbr" class="common" />
+      <div></div>
+      <br />
+      <label for="myEligibility"> Are you eligible(18+) ? :</label>
+      <input type="checkbox" id="myEligibility" checked class="common" />
+      <div></div>
+      <br />
+      <div>
+        Gender : Male<input type="radio" name="myGender" class="common" />
+        Female <input type="radio" name="myGender" class="common" /> Others
+        <input type="radio" name="myGender" class="common" />
+      </div>
+      <br />
+      <div>
+        Movie Feedback :
+        <br />
+        <textarea name="myText" id="" cols="50" rows="10"> </textarea>
+      </div>
+      <div>
+        <label for="review">Ratings:</label>
+        <select name="ratings" id="review" class="common">
+          <option value="1">1 *</option>
+          <option value="2">2 **</option>
+          <option value="3">3 ***</option>
+          <option value="4">4 ****</option>
+          <option value="5">5 *****</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <input type="Submit" value="Submit Now" class="common" id="submit" />
+        <input type="Reset" value="Reset Now" class="common" id="reset" />
+      </div>
+      <button id="contact">Contact us</button>
+    </form>
+  </body>
+</html>
