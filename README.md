@@ -65,3 +65,5 @@ Add star-rating UI instead of dropdown
 This project is licensed under the MIT License.
 
 <img width="1910" height="967" alt="image" src="https://github.com/user-attachments/assets/8f57b863-bf06-4f85-a1dd-ec82b281ed61" />
+
+
